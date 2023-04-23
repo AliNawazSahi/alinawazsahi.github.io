@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahsan's New Project</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+
+            background-image: url("galaxy.jpg");
+            width: 100vh;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+        }
+
+        .galaxy {
+            width: 1152px;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+.sun{
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    /* box-shadow: -1px 0px 17px white; */
+    
+}
+
+.sun::before{
+     content: "";
+    background-image: url("sun.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 190px;
+    margin-left: 600px;
+
+}
+         
+
+        
+
+        .earth img {
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            box-shadow: 0px -1px 20px 9px rgb(25 6 139);
+            animation: rotate 10s infinite linear reverse;
+
+        }
+
+        #moon {
+            height: 280px;
+            width: 280px;
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: 1px 1px 20px 6px white;
+            box-shadow: 1px 1px 20px 6px white;
+            animation: rotate 25s infinite linear;
+
+        }
+
+        #moon::before {
+            content: "";
+            background-image: url("moon.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 60px;
+            width: 60px;
+            display: block;
+            border-radius: 50%;
+            box-shadow: 1px 1px 20px 6px white;
+            margin-left: 25px;
+            animation: rotate 10s infinite linear;
+
+
+
+        }
+
+        @keyframes rotate {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div class="galaxy">
+
+        <div class="earth">
+            <img src="earth.jpg" alt="This is earth">
+        </div>
+
+
+        <div id="moon">
+
+        </div>
+
+        <div class="sun"></div>
+    
+
+    </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
